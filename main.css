@@ -1,0 +1,434 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    height: auto;
+    padding-bottom: 70px;
+}
+
+html, body {
+    width: 100%;
+}
+
+
+button:focus {
+    outline: none !important;
+}
+
+.navbar {
+    background: #C4E301;
+    font-weight: bold;
+    letter-spacing: 0.5px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+}
+
+.navbar-brand {
+    display: flex;
+    align-items: center;
+}
+
+.navbar-brand img {
+    height: 60px;
+}
+
+.logo-text {
+    text-transform: uppercase;
+}
+
+.navbar .navbar-toggler {
+    display: none;
+}
+
+.navbar-collapse.collapse {
+    display: block;
+}
+
+.navbar-nav {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.navbar-light .navbar-nav .nav-link,
+.phone-number{
+    background: #76A700;
+    margin-left: 20px;
+    border-radius: 10px;
+    color: #ffffff;
+    border: 2px solid #76A700;
+}
+
+.carousel {
+    margin: 90px auto 20px;
+}
+
+.carousel-item {
+    height: 50vh;
+}
+
+.img-fluid {
+    margin: 0 auto;
+    width: 70%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.carousel .carousel-control-prev,
+.carousel .carousel-control-next {
+    font-size: 50px;
+    color: #76A700;
+}
+.info-block {
+    padding: 20px 0;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+}
+
+.delivery {
+    background-image: url("images/delivery.jpg");
+    background-position-y: 20%;
+}
+
+.delivery,
+.contacts {
+    background-size: cover;
+    color: #ffffff;
+    position: relative;
+}
+
+.delivery:before,
+.contacts:before {
+    content: " ";
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+}
+.title {
+    text-align: center;
+    padding: 10px;
+    font-weight: bold;
+    position: relative;
+}
+
+.delivery-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.delivery-row p {
+    margin-bottom: 0;
+}
+
+.delivery-row img {
+    height: 35px;
+    width: auto;
+}
+
+.new-post {
+    background: transparent;
+}
+
+.phone-number {
+    padding: 10px 20px;
+    margin-left: 0;
+    text-align: center;
+}
+
+.phone-number:hover {
+    background: transparent;
+    color: #ffffff;
+    border: 2px solid #76A700;
+    text-decoration: none;
+}
+
+.new-post:hover {
+    background: rgba(255, 255, 255, 0.50);
+}
+
+.advantages {
+    text-align: center;
+}
+
+.advantage {
+    display: flex;
+    flex-direction: column;
+    padding: 20px 5px;
+}
+
+.img-block {
+    height: 200px;
+    width: 200px;
+    margin: 0 auto;
+    margin-bottom: 20px;
+    transition: transform 2s;
+}
+
+.img-block:hover {
+    transform: rotate(180deg);
+}
+
+.advantage img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 2px solid #76A700;
+}
+
+.contacts {
+    background: url("images/contacts.jpg"), no-repeat;
+}
+
+.contact-number {
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.contact-number span {
+    padding-right: 5px;
+}
+
+footer {
+    opacity: 0.7;
+    background: #76A700;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+}
+
+.footer {
+    align-items: center;
+}
+
+.footer .navbar-brand {
+    color: #212529;
+    display: flex;
+}
+
+.copyright {
+    text-align: right;
+}
+
+/*trees------------------------------------------------------------------------------------*/
+.tree-title {
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    margin-top: 110px;
+    padding: 20px;
+}
+
+.tree-type {
+    border-radius: 10px;
+    font-size: 1.5em;
+    color: #76A700;
+    font-weight: bold;
+    padding: 5px 20px;
+    border: 2px solid #ffffff;
+}
+
+.card-block {
+    padding: 10px 5%;
+    height: 210px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.card {
+    margin-bottom: 20px;
+}
+
+.card .img-fluid {
+    width: 90%;
+    height: 240px;
+    margin: 5%;
+}
+
+/*end of trees------------------------------------------------------------------------------------*/
+
+
+/*mobile menu-------------------------------------------*/
+.burger-btn {
+    display: none;
+    font-size: 30px;
+    cursor: pointer;
+    position: absolute;
+    right: 10px;
+    color: #ffffff;
+    padding: 0 10px;
+    background: #76A700;
+    border-radius: 10px;
+    border: none;
+}
+
+.sidenav {
+    height: 100vh;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background: #0d0d0d;
+    transition: 0.5s;
+    padding-top: 60px;
+    overflow: hidden;
+}
+
+.sidenav a {
+    font-weight: normal;
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #76A700;
+    display: block;
+    transition: 0.3s;
+}
+
+.sidenav a:hover {
+    color: #fff;
+}
+
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+#main {
+    transition: margin-left .5s;
+    padding: 16px;
+}
+
+/*mobile menu-------------------------------------------*/
+
+@media (max-width: 991px) and (min-width: 768px){
+    .contact-number {
+        flex-direction: column;
+        align-items: inherit;
+    }
+
+    .logo-text {
+        display: inline-block;
+        white-space: initial;
+        width: 125px;
+    }
+}
+
+@media (max-width: 991px){
+    body {
+        padding-bottom: 0;
+    }
+
+    footer.fixed-bottom {
+        position: relative;
+    }
+}
+
+@media (max-width: 800px) and (min-width: 768px){
+    .navbar .navbar-brand {
+        display: flex;
+        white-space: initial;
+        width: 150px;
+    }
+}
+
+@media (max-width: 768px) {
+    .navbar .navbar-brand {
+        display: flex;
+        justify-content: center;
+        width: 200px;
+        margin: 0 auto;
+    }
+
+    .navbar-nav.mr-auto {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .footer .navbar-brand {
+        white-space: inherit;
+    }
+}
+
+@media (max-width: 767px) and (min-width: 576px){
+    .carousel {
+        margin-top: 135px;
+    }
+
+    .advantage {
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .img-block {
+        width: auto;
+        height: auto;
+        margin: 0;
+    }
+
+    .advantage img {
+        height: 100px;
+        width: 100px;
+    }
+
+    .advantage-info {
+        padding-left: 20px;
+        margin: 0 auto;
+    }
+}
+
+@media (max-width: 576px){
+    .navbar .navbar-brand {
+        justify-content: flex-start;
+        width: 80%;
+        margin: 0;
+    }
+
+    .logo-text {
+        white-space: initial;
+    }
+
+    .burger-btn {
+        display: block;
+    }
+
+    .navbar-nav {
+        display: none;
+    }
+
+    .phone-number {
+        margin: 0 25px;
+    }
+
+    .mail {
+        padding: 10px 0;
+    }
+
+    .contact-number {
+        flex-direction: column;
+        align-items: inherit;
+    }
+
+    .contact-number .phone-number {
+        margin: 0;
+    }
+
+    .footer .logo-text,
+    .copyright {
+        font-size: 12px;
+    }
+}
+
